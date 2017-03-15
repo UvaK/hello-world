@@ -22,3 +22,9 @@ The application is divided into 4 parts:
 
 1. `./triton-docker-setup.sh -k us-east-1.api.joyent.com <ACCOUNT> ~/.ssh/<PRIVATE_KEY_FILE>`
 2. `docker-compose up -d`
+
+# Hello World running on Local Machine by docker-compose
+
+After doing `docker-compose up` command, docker-compose runs 4 docker containers and we will able to see hello world page on :80 port of host machine. Port 80 exposed from the nginx docker container to the host machine.
+
+![resulting HelloWorld page](result.png)
