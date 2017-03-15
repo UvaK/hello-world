@@ -17,11 +17,11 @@ const expect = Code.expect;
 
 
 describe('World', () => {
-  it('responds with a 200 and the word "World"', (done) => {
+  it('responds with a 200 and the word "Konstantin"', (done) => {
     Wreck.get(`http://localhost:${World.address().port}/`, (err, res, payload) => {
       expect(err).to.not.exist();
       expect(res.statusCode).to.equal(200);
-      expect(payload.toString()).to.equal('World');
+      expect(payload.toString()).to.equal('Konstantin');
       done();
     });
   });
